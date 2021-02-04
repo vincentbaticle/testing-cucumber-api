@@ -1,12 +1,6 @@
-Feature: Is it Friday tomorrow?
+Feature: Test Api
 
-  Scenario Outline: tomorrow is or is not Friday
-    Given tomorrow is "<day>"
-    When I ask whether tomorrow is Friday yet
-    Then I should be told tomorrow "<answer>"
-
-  Examples:
-    | day            | answer |
-    | Friday         | TGIF   |
-    | Sunday         | Nope   |
-    | anything else! | Nope   |
+  Scenario Outline: get a contact
+    Given an id for api
+    When I send GET request to "https://reqres.in/api/users/2"
+    Then I get response code 200
