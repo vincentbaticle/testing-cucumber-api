@@ -1,0 +1,12 @@
+Feature: Test Good text for mailto 
+  As a QA
+  I want to make sure the mailto href and text are matching 
+  
+  Scenario: Check mailto href and text are matching
+   Given I am on page "<end_url>"
+   When I choose the mailto "<mailto>"
+   Then the mailto name text  should be same as mailto
+   
+   Examples:
+    | end_url    | mailto  | 
+    | contact-fr | communication@believedigital.com |  

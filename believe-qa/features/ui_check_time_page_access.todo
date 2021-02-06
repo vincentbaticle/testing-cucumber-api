@@ -1,0 +1,15 @@
+Feature: Test Time page access 
+  As a QA
+  I want to make sure the Time page access is good 
+  
+  Scenario: Check the Time page access is good 
+   Given I click on page "<end_url>"
+   When I load the page
+   Then the time should be less "<time>" 
+   
+   Examples:
+    | end_url    | time | 
+    | contact-fr | 560  |  
+	| contact    | 560  |
+	| values     | 560  |
+	| teams      | 700  |

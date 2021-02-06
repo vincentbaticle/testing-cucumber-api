@@ -4,4 +4,4 @@
 
 -Install NodeJs and pull the repo
 
--launch test inside "testing-qa" directory with the command "npm test"
+-launch test inside "believe-qa" directory with the command "npm test"
